@@ -449,63 +449,8 @@ def podelna_stani(vk):
 
 
 # ---------------------------------------------------------------- VARIANTY
-def varianta_1():
-    vk = Vykres("V1", "Parkování u vjezdu, stánek uprostřed",
-                "Bistro 12,2 × 2,5 m (kontejner 40 stop) naproti vysavačům, hosté parkují v kapse u vjezdu.")
-    zaklad(vk, sever_pruh_obousmerny=False)
-    blok_vysavacu_ostrov(vk, koty=True)
-    # parkovací kapsa podél zdi u vjezdu (auta čelem ke zdi)
-    pocet, hrany, cela = 0, [-21.0], []
-    u = -21.0
-    for s_ in (STANI[0],) * 3 + (STANI_ZTP,):
-        vz = max(v_zed(u), v_zed(u + s_)) + 0.3
-        ztp = s_ == STANI_ZTP
-        vk.rect("ztp" if ztp else "stani", u, vz, u + s_, vz + STANI[1], "♿" if ztp else "P", 0.9 if ztp else 0.7)
-        if pocet == 0:
-            vk.kota_v(u - 0.6, vz, vz + STANI[1])
-        u += s_
-        hrany.append(u)
-        cela.append(vz + STANI[1])
-        pocet += 1
-    vk.retez_u(hrany, max(cela) + 0.6)
-    kapsa_konec = u
-    # bistro naproti vysavačům, terasa po celé jeho délce
-    t1 = kapsa_konec + 0.8
-    t2 = t1 + STANKY["velky"][0]
-    vs = max(v_zed(t1), v_zed(t2)) + 0.4
-    _, vj = vk.kiosk(t1, vs, "velky")
-    vk.rect("terasa", t1, vj, t2, SEVER_PRUH - 1.0, "terasa s pergolou", 0.6, ((t1 + t2) / 2, SEVER_PRUH - 1.6))
-    vk.stoly([(t1 + 1.5 + 2.9 * i, vj + 1.6) for i in range(4)])
-    prechod_u = -BLOK + VYSAVAC_STANI + OSTRUVEK / 2       # proti ostrůvku východního bloku
-    vk.rect("zelen", t1, SEVER_PRUH - 1.0, prechod_u - 1.0, SEVER_PRUH - 0.1)
-    vk.rect("zelen", prechod_u + 1.0, SEVER_PRUH - 1.0, t2, SEVER_PRUH - 0.1)
-    vk.prechod(prechod_u - 1.0, prechod_u + 1.0, SEVER_PRUH, VYS_NOVE[0])
-    vk.retez_v(t2 + 0.4, [v_zed(t2 + 0.4), vs, vj, SEVER_PRUH - 1.0, SEVER_PRUH])
-    vk.kota_u(t1, t2, SEVER_PRUH + 0.6)
-    pocet += vk.stani_rada(t2 + 0.8, 31.0, SEVER_PRUH - STANI[1], SEVER_PRUH, kota_v=SEVER_PRUH + 0.6)
-    vk.sipka("pesi", [g(prechod_u, -2.0), g(prechod_u, SEVER_PRUH - 0.4)])
-    koty_pruhu(vk, VYS_NOVE, -24.5)
-    vk.kota_v(-17.0, -H2, SEVER_PRUH)
-    vk.sipka("host", [(12.0, VJEZD_Y + 0.6), (12.8, 24.0), g(-15.5, -12.6)])
-    vk.sipka("pesi", [g(-14.0, -13.6), g(t1 + 1.0, vj + 0.8)])
-    vk.kota_v(-17.5, SEVER_PRUH, v_zed(-17.5) + 0.3 + STANI[1])
-    vk.plusy = [
-        "Hosté stánku zaparkují v kapse hned u vjezdu a do provozu myčky nevjíždějí. Ulička podél boxů zůstává jednosměrná.",
-        "Bistro s terasou je uprostřed, blízko vysavačů i boxů. Přechod od ostrůvku vede rovnou na terasu.",
-        "Bistro (kuchyně, sklad, WC pro personál) zvládne teplá jídla i víc obsluhy.",
-        "Vysavače jsou pohromadě u boxů, auta k nim zajíždějí po cestě k výjezdu.",
-        f"Celkem {pocet} velkorysých stání: 4 v kapse u vjezdu (z toho 1 ZTP) a zbytek podél zdi pro zákazníky myčky.",
-    ]
-    vk.minusy = [
-        "Kapsa leží ve vyjížděcím pruhu u výjezdu. Kdo couvá z kapsy, kříží auta, která odjíždějí z myčky.",
-        "Stánek není z vjezdu tak vidět jako stánek přímo u vjezdu, terasa je blíž hluku vysokotlakých pistolí.",
-        "Terasa je tu mělká (asi 4,5 m), vejde se jen jedna řada stolů.",
-    ]
-    return vk
-
-
-def varianta_2():
-    vk = Vykres("V2", "Vysavače naproti boxům",
+def varianta_bistro_u_vjezdu():
+    vk = Vykres("V?", "Vysavače naproti boxům",
                 "Bistro 12,2 × 2,5 m (kontejner 40 stop) u vjezdu, z boxu rovně k vysavači, ostrov = parkoviště.")
     zaklad(vk, sever_pruh_obousmerny=True)
     # vysavače podél zdi naproti boxům M1–M3, vjezd z jihu (z uličky)
@@ -537,12 +482,24 @@ def varianta_2():
     return vk
 
 
-def varianta_3():
-    vk = Vykres("V3", "Kompaktní bistro",
-                "Bistro 6,1 × 4,9 m (2× kontejner 20 stop) zády na východ, terasa západně a jižně od něj, podélná stání u vjezdu.")
-    zaklad(vk, sever_pruh_obousmerny=False)
-    blok_vysavacu_ostrov(vk, koty=True)
+def varianta_kompaktni(vysavace_sever=False):
+    if vysavace_sever:
+        vk = Vykres("V?", "Kompaktní bistro, vysavače na severu",
+                    "Jako kompaktní bistro, ale stání u vysavačů jsou u zdi naproti boxům a ostrov je parkoviště.")
+    else:
+        vk = Vykres("V?", "Kompaktní bistro",
+                    "Bistro 6,1 × 4,9 m (2× kontejner 20 stop) zády na východ, terasa západně a jižně od něj, podélná stání u vjezdu.")
+    zaklad(vk, sever_pruh_obousmerny=vysavace_sever)
+    if vysavace_sever:
+        # ostrov: parkování čelem od uličky (vjezd ze severu)
+        na_ostrove = vk.stani_rada(VYS_A[0], -0.3, VYS_NOVE[0], VYS_NOVE[0] + STANI[1], ztp_na_konci=True,
+                                   kota_v=VYS_NOVE[0] - 0.6, hloubka_na_zacatku=True)
+        vk.sipka("host", [(12.0, VJEZD_Y + 0.6), (12.6, 25.5), g(-14.0, -5.0)])
+    else:
+        blok_vysavacu_ostrov(vk, koty=True)
+        na_ostrove = 0
     pocet, ztp_sirka, konec_stani = podelna_stani(vk)
+    pocet += na_ostrove
     w, h, _ = STANKY["kompaktni"]
     t1 = konec_stani + 1.2                 # západní okraj terasy
     b1, b2 = -6.0, -6.0 + w               # bistro
@@ -564,6 +521,29 @@ def varianta_3():
     vk.prechod(prechod_u - 1.0, prechod_u + 1.0, SEVER_PRUH, VYS_NOVE[0])
     vk.retez_u([t1, b1, b2], SEVER_PRUH + 0.6)
     vk.retez_v(b2 + 0.4, [v_zed(b2 + 0.4), vs, vj, jih, SEVER_PRUH])
+    if vysavace_sever:
+        # vysavače u zdi hned za bistrem, naproti boxům M1–M3, vjezd z uličky
+        v_vys = (SEVER_PRUH - VYSAVAC_HLOUBKA, SEVER_PRUH)
+        z = b2 + 1.6
+        vk.blok_vysavacu(z, z + BLOK, *v_vys, k_severu=False, koty=True)
+        vk.blok_vysavacu(z + BLOK, z + 2 * BLOK, *v_vys, k_severu=False)
+        pocet += vk.stani_rada(z + 2 * BLOK + 0.5, 31.0, SEVER_PRUH - STANI[1], SEVER_PRUH, kota_v=SEVER_PRUH + 0.6)
+        vk.sipka("vysavac", [g(BOX_M * 0.5, -H2 + 0.3), g(z + VYSAVAC_STANI / 2, SEVER_PRUH - 2.5)])
+        vk.sipka("pesi", [g(prechod_u, -2.5), g(prechod_u, SEVER_PRUH - 0.4)])
+        koty_pruhu(vk, (VYS_NOVE[0], VYS_NOVE[0] + STANI[1]), VYS_A[0])
+        vk.kota_v(16.0, -H2, SEVER_PRUH)
+        vk.plusy = [
+            "Z boxu se jede rovně přes uličku do stání u vysavače, nemusí se zatáčet.",
+            "Bistro, terasa a podélná stání u vjezdu zůstávají stejné jako u kompaktního bistra.",
+            f"Celkem {pocet} velkorysých stání: 3 podélně u vjezdu, {na_ostrove} na ostrově a zbytek u zdi (2 stání ZTP).",
+            "Ostrov na západě je celý pro hosty, k terase je to přes přechod pár kroků.",
+        ]
+        vk.minusy = [
+            "Kdo couvá od vysavače, vjíždí do uličky přímo před výjezdy z boxů.",
+            "Ulička musí být obousměrná, hosté jedou na ostrov proti autům z myčky (asi 25 m).",
+            "Ze stání u vjezdu se couvá zpátky do prostoru vjezdu a pěší z ostrova přecházejí mezi zaparkovanými auty.",
+        ]
+        return vk
     pocet += vk.stani_rada(b2 + 0.8, 31.0, SEVER_PRUH - STANI[1], SEVER_PRUH, kota_v=SEVER_PRUH + 0.6)
     vk.sipka("pesi", [g(prechod_u, -2.0), g(prechod_u, SEVER_PRUH - 0.4)])
     koty_pruhu(vk, VYS_NOVE, -24.5)
@@ -571,7 +551,7 @@ def varianta_3():
     vk.plusy = [
         "Bistro je kompaktní (2 kontejnery vedle sebe) a má výdej na západ i na jih, terasa ho obepíná ze dvou stran.",
         "Velká terasa míří k vjezdu a do slunce (jih, západ), záda bistra jsou k boxům a uličce.",
-        f"Celkem {pocet} velkorysých stání: 3 podélně u vjezdu (z toho 1 ZTP) a zbytek podél zdi, víc než ve V1.",
+        f"Celkem {pocet} velkorysých stání: 3 podélně u vjezdu (z toho 1 ZTP) a zbytek podél zdi.",
         "Přechod od ostrůvku s vysavači vede rovnou na terasu, ulička podél boxů zůstává jednosměrná.",
     ]
     vk.minusy = [
@@ -819,7 +799,7 @@ mění se vysavače, stánek, terasa a parkování. Rozměry jsou odměřené z 
 <tr><td>Kontejner 10 stop</td><td>3,0 × 2,44 m</td><td>~7 m²</td><td>malá kavárna, pekařský stánek, zmrzlina</td><td>–</td></tr>
 <tr><td>Food truck / přívěs</td><td>4,9–7,3 × 2,1–2,4 m (např. 5,93 × 2,08 m)</td><td>10–17 m²</td><td>street food s přípravou, dá se odvézt (zimní sezóna)</td><td>–</td></tr>
 <tr><td>Kontejner 20 stop</td><td>6,06 × 2,44 m (uvnitř 5,9 × 2,35 m)</td><td>~15 m²</td><td>rychlé občerstvení s přípravou: gril, fritéza, digestoř, dřez, 1–2 obsluha</td><td>–</td></tr>
-<tr><td>Kontejner 40 stop nebo 2× 20 stop</td><td>12,2 × 2,44 m nebo ~6,1 × 4,9 m</td><td>~30 m²</td><td>bistro: kuchyně, sklad, mytí nádobí, WC pro personál, víc obsluhy</td><td><b>V1, V2</b> (12,2 × 2,5 m), <b>V3</b> (2× 20 stop: 6,1 × 4,9 m)</td></tr>
+<tr><td>Kontejner 40 stop nebo 2× 20 stop</td><td>12,2 × 2,44 m nebo ~6,1 × 4,9 m</td><td>~30 m²</td><td>bistro: kuchyně, sklad, mytí nádobí, WC pro personál, víc obsluhy</td><td><b>V1</b> (12,2 × 2,5 m), <b>V2, V3</b> (2× 20 stop: 6,1 × 4,9 m)</td></tr>
 </table>
 <h3 style="margin-top:14px">Na co si dát pozor</h3><ul>
 <li><b>Hygiena:</b> vyhláška 137/2004 Sb. má dnes většinu požadavků na provozovny zrušenou a řídí se hlavně předpisy EU. Kde se jídlo připravuje, počítejte s tekoucí teplou i studenou vodou, umyvadlem na ruce, odpadní vodou a chlazením. Konkrétní požadavky, včetně WC pro hosty u posezení, je potřeba odsouhlasit s krajskou hygienickou stanicí. Jednoznačný limit jsem nenašel. Jedna možnost je zpřístupnit hostům WC v TECH BOXu.</li>
@@ -850,7 +830,9 @@ document.getElementById('pk').addEventListener('change',e=>document.body.classLi
 def main():
     VYSTUP.mkdir(exist_ok=True)
     png, velikost = podklad_png()
-    vykresy = [varianta_1(), varianta_2(), varianta_3()]
+    vykresy = [varianta_bistro_u_vjezdu(), varianta_kompaktni(), varianta_kompaktni(vysavace_sever=True)]
+    for i, vk in enumerate(vykresy, 1):
+        vk.kod = f"V{i}"
     for stary in VYSTUP.glob("varianta-*.svg"):
         stary.unlink()
     svgs, chyby = [], {}
