@@ -32,44 +32,47 @@
 <path d="M21.641,15.460 L24.634,15.247 L25.024,20.733 L22.031,20.946 Z" fill="#ffffff" stroke="#6b6b6b" stroke-width="0.08"/>
 <path d="M24.651,15.495 L27.644,15.282 L28.034,20.768 L25.041,20.981 Z" fill="#ffffff" stroke="#6b6b6b" stroke-width="0.08"/>
 <path d="M27.667,15.612 L31.657,15.328 L32.047,20.815 L28.057,21.098 Z" fill="#dbe8f7" stroke="#2f6db5" stroke-width="0.1"/>
-<path d="M35.512,15.968 L38.505,15.755 L38.682,18.248 L35.690,18.461 Z" fill="#f39a3a" stroke="#8a4a10" stroke-width="0.15"/>
-<path d="M32.520,16.180 L35.213,15.989 L35.390,18.482 L32.697,18.674 Z" fill="#b9dca5" stroke="#6aa24f" stroke-width="0.06"/>
-<path d="M38.804,15.733 L41.497,15.542 L41.674,18.036 L38.981,18.227 Z" fill="#b9dca5" stroke="#6aa24f" stroke-width="0.06"/>
-<path d="M32.697,18.674 L41.674,18.036 L42.016,22.843 L33.039,23.481 Z" fill="#f3e2c3" stroke="#b08a50" stroke-width="0.1"/>
+<path d="M32.539,16.444 L44.708,15.579 L44.885,18.073 L32.716,18.938 Z" fill="#f39a3a" stroke="#8a4a10" stroke-width="0.15"/>
+<path d="M32.716,18.938 L44.885,18.073 L45.208,22.616 L33.039,23.481 Z" fill="#f3e2c3" stroke="#b08a50" stroke-width="0.1"/>
 <path d="M33.039,23.481 L34.635,23.368 L34.699,24.265 L33.103,24.379 Z" fill="#b9dca5" stroke="#6aa24f" stroke-width="0.06"/>
-<path d="M36.630,23.226 L42.016,22.843 L42.080,23.741 L36.694,24.124 Z" fill="#b9dca5" stroke="#6aa24f" stroke-width="0.06"/>
+<path d="M36.630,23.226 L45.208,22.616 L45.272,23.514 L36.694,24.124 Z" fill="#b9dca5" stroke="#6aa24f" stroke-width="0.06"/>
 <path d="M34.706,24.365 L36.701,24.223 L37.162,30.707 L35.167,30.849 Z" fill="url(#zebra)" stroke="none"/>
-<path d="M42.495,18.297 L45.488,18.085 L45.878,23.571 L42.885,23.784 Z" fill="#ffffff" stroke="#6b6b6b" stroke-width="0.08"/>
-<path d="M45.488,18.085 L48.480,17.872 L48.870,23.358 L45.878,23.571 Z" fill="#ffffff" stroke="#6b6b6b" stroke-width="0.08"/>
-<path d="M48.480,17.872 L51.472,17.659 L51.862,23.145 L48.870,23.358 Z" fill="#ffffff" stroke="#6b6b6b" stroke-width="0.08"/>
-<path d="M51.472,17.659 L54.465,17.446 L54.855,22.933 L51.862,23.145 Z" fill="#ffffff" stroke="#6b6b6b" stroke-width="0.08"/>
-<path d="M54.465,17.446 L57.457,17.234 L57.847,22.720 L54.855,22.933 Z" fill="#ffffff" stroke="#6b6b6b" stroke-width="0.08"/>
-<path d="M57.457,17.234 L60.450,17.021 L60.840,22.507 L57.847,22.720 Z" fill="#ffffff" stroke="#6b6b6b" stroke-width="0.08"/>
-<path d="M60.450,17.021 L63.442,16.808 L63.832,22.294 L60.840,22.507 Z" fill="#ffffff" stroke="#6b6b6b" stroke-width="0.08"/>
-<path d="M63.442,16.808 L66.435,16.595 L66.825,22.082 L63.832,22.294 Z" fill="#ffffff" stroke="#6b6b6b" stroke-width="0.08"/>
-<path d="M66.435,16.595 L69.427,16.383 L69.817,21.869 L66.825,22.082 Z" fill="#ffffff" stroke="#6b6b6b" stroke-width="0.08"/>
+<path d="M45.687,18.071 L48.679,17.858 L49.070,23.344 L46.077,23.557 Z" fill="#ffffff" stroke="#6b6b6b" stroke-width="0.08"/>
+<path d="M48.679,17.858 L51.672,17.645 L52.062,23.131 L49.070,23.344 Z" fill="#ffffff" stroke="#6b6b6b" stroke-width="0.08"/>
+<path d="M51.672,17.645 L54.664,17.432 L55.054,22.918 L52.062,23.131 Z" fill="#ffffff" stroke="#6b6b6b" stroke-width="0.08"/>
+<path d="M54.664,17.432 L57.657,17.219 L58.047,22.706 L55.054,22.918 Z" fill="#ffffff" stroke="#6b6b6b" stroke-width="0.08"/>
+<path d="M57.657,17.219 L60.649,17.007 L61.039,22.493 L58.047,22.706 Z" fill="#ffffff" stroke="#6b6b6b" stroke-width="0.08"/>
+<path d="M60.649,17.007 L63.642,16.794 L64.032,22.280 L61.039,22.493 Z" fill="#ffffff" stroke="#6b6b6b" stroke-width="0.08"/>
+<path d="M63.642,16.794 L66.634,16.581 L67.024,22.067 L64.032,22.280 Z" fill="#ffffff" stroke="#6b6b6b" stroke-width="0.08"/>
+<path d="M66.634,16.581 L69.627,16.368 L70.017,21.855 L67.024,22.067 Z" fill="#ffffff" stroke="#6b6b6b" stroke-width="0.08"/>
 <circle cx="27.307" cy="35.919" r="0.36" fill="#7a3fc2"/>
 <circle cx="27.193" cy="34.323" r="0.36" fill="#7a3fc2"/>
 <rect x="27.065" y="36.696" width="0.64" height="0.64" fill="#1f6fd1" transform="rotate(-4.07 27.385 37.016)"/>
 <circle cx="36.483" cy="35.267" r="0.36" fill="#7a3fc2"/>
 <circle cx="36.370" cy="33.671" r="0.36" fill="#7a3fc2"/>
 <rect x="36.241" y="36.044" width="0.64" height="0.64" fill="#1f6fd1" transform="rotate(-4.07 36.561 36.364)"/>
-<line x1="36.188" y1="18.426" x2="38.183" y2="18.284" stroke="#fff" stroke-width="0.25"/>
-<circle cx="34.307" cy="20.164" r="0.45" fill="#fff" stroke="#8a6a3a" stroke-width="0.07"/>
-<circle cx="35.055" cy="20.110" r="0.2" fill="#8a6a3a"/>
-<circle cx="33.559" cy="20.217" r="0.2" fill="#8a6a3a"/>
-<circle cx="34.360" cy="20.912" r="0.2" fill="#8a6a3a"/>
-<circle cx="34.254" cy="19.415" r="0.2" fill="#8a6a3a"/>
-<circle cx="37.299" cy="19.951" r="0.45" fill="#fff" stroke="#8a6a3a" stroke-width="0.07"/>
-<circle cx="38.047" cy="19.898" r="0.2" fill="#8a6a3a"/>
-<circle cx="36.551" cy="20.004" r="0.2" fill="#8a6a3a"/>
-<circle cx="37.352" cy="20.699" r="0.2" fill="#8a6a3a"/>
-<circle cx="37.246" cy="19.203" r="0.2" fill="#8a6a3a"/>
-<circle cx="40.292" cy="19.738" r="0.45" fill="#fff" stroke="#8a6a3a" stroke-width="0.07"/>
-<circle cx="41.040" cy="19.685" r="0.2" fill="#8a6a3a"/>
-<circle cx="39.544" cy="19.791" r="0.2" fill="#8a6a3a"/>
-<circle cx="40.345" cy="20.486" r="0.2" fill="#8a6a3a"/>
-<circle cx="40.239" cy="18.990" r="0.2" fill="#8a6a3a"/>
+<line x1="35.575" y1="18.735" x2="37.969" y2="18.565" stroke="#fff" stroke-width="0.25"/>
+<line x1="39.632" y1="18.446" x2="42.026" y2="18.276" stroke="#fff" stroke-width="0.25"/>
+<circle cx="34.326" cy="20.428" r="0.45" fill="#fff" stroke="#8a6a3a" stroke-width="0.07"/>
+<circle cx="35.074" cy="20.374" r="0.2" fill="#8a6a3a"/>
+<circle cx="33.577" cy="20.481" r="0.2" fill="#8a6a3a"/>
+<circle cx="34.379" cy="21.176" r="0.2" fill="#8a6a3a"/>
+<circle cx="34.272" cy="19.680" r="0.2" fill="#8a6a3a"/>
+<circle cx="37.218" cy="20.222" r="0.45" fill="#fff" stroke="#8a6a3a" stroke-width="0.07"/>
+<circle cx="37.966" cy="20.169" r="0.2" fill="#8a6a3a"/>
+<circle cx="36.470" cy="20.275" r="0.2" fill="#8a6a3a"/>
+<circle cx="37.271" cy="20.970" r="0.2" fill="#8a6a3a"/>
+<circle cx="37.165" cy="19.474" r="0.2" fill="#8a6a3a"/>
+<circle cx="40.111" cy="20.016" r="0.45" fill="#fff" stroke="#8a6a3a" stroke-width="0.07"/>
+<circle cx="40.859" cy="19.963" r="0.2" fill="#8a6a3a"/>
+<circle cx="39.363" cy="20.070" r="0.2" fill="#8a6a3a"/>
+<circle cx="40.164" cy="20.764" r="0.2" fill="#8a6a3a"/>
+<circle cx="40.058" cy="19.268" r="0.2" fill="#8a6a3a"/>
+<circle cx="43.004" cy="19.811" r="0.45" fill="#fff" stroke="#8a6a3a" stroke-width="0.07"/>
+<circle cx="43.752" cy="19.757" r="0.2" fill="#8a6a3a"/>
+<circle cx="42.256" cy="19.864" r="0.2" fill="#8a6a3a"/>
+<circle cx="43.057" cy="20.559" r="0.2" fill="#8a6a3a"/>
+<circle cx="42.950" cy="19.063" r="0.2" fill="#8a6a3a"/>
 <text transform="translate(43.752,33.503) rotate(-4.07)" font-size="1.0" fill="#222" text-anchor="middle" dominant-baseline="middle" font-weight="600"><tspan x="0" y="0.000">M1</tspan></text>
 <text transform="translate(49.288,33.109) rotate(-4.07)" font-size="1.0" fill="#222" text-anchor="middle" dominant-baseline="middle" font-weight="600"><tspan x="0" y="0.000">M2</tspan></text>
 <text transform="translate(54.375,32.747) rotate(-4.07)" font-size="1.0" fill="#222" text-anchor="middle" dominant-baseline="middle" font-weight="600"><tspan x="0" y="-0.550">TECH</tspan><tspan x="0" y="0.550">BOX</tspan></text>
@@ -85,17 +88,16 @@
 <text transform="translate(23.333,18.097) rotate(-4.07)" font-size="0.7" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">P</tspan></text>
 <text transform="translate(26.343,18.131) rotate(-4.07)" font-size="0.7" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">P</tspan></text>
 <text transform="translate(29.857,18.213) rotate(-4.07)" font-size="0.9" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">♿</tspan></text>
-<text transform="translate(37.097,17.108) rotate(-4.07)" font-size="0.48" fill="#fff" text-anchor="middle" dominant-baseline="middle" font-weight="600"><tspan x="0" y="-0.264">KAVÁRNA</tspan><tspan x="0" y="0.264">3,0 × 2,5 m</tspan></text>
-<text transform="translate(37.485,22.564) rotate(-4.07)" font-size="0.6" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">terasa s pergolou</tspan></text>
-<text transform="translate(44.186,20.934) rotate(-4.07)" font-size="0.7" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">P</tspan></text>
-<text transform="translate(47.179,20.721) rotate(-4.07)" font-size="0.7" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">P</tspan></text>
-<text transform="translate(50.171,20.509) rotate(-4.07)" font-size="0.7" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">P</tspan></text>
-<text transform="translate(53.164,20.296) rotate(-4.07)" font-size="0.7" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">P</tspan></text>
-<text transform="translate(56.156,20.083) rotate(-4.07)" font-size="0.7" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">P</tspan></text>
-<text transform="translate(59.149,19.870) rotate(-4.07)" font-size="0.7" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">P</tspan></text>
-<text transform="translate(62.141,19.658) rotate(-4.07)" font-size="0.7" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">P</tspan></text>
-<text transform="translate(65.133,19.445) rotate(-4.07)" font-size="0.7" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">P</tspan></text>
-<text transform="translate(68.126,19.232) rotate(-4.07)" font-size="0.7" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">P</tspan></text>
+<text transform="translate(38.712,17.259) rotate(-4.07)" font-size="0.65" fill="#fff" text-anchor="middle" dominant-baseline="middle" font-weight="600"><tspan x="0" y="-0.715">BISTRO</tspan><tspan x="0" y="0.000">kuchyně, sklad, WC</tspan><tspan x="0" y="0.715">12,2 × 2,5 m</tspan></text>
+<text transform="translate(39.081,22.450) rotate(-4.07)" font-size="0.6" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">terasa s pergolou</tspan></text>
+<text transform="translate(47.378,20.707) rotate(-4.07)" font-size="0.7" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">P</tspan></text>
+<text transform="translate(50.371,20.494) rotate(-4.07)" font-size="0.7" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">P</tspan></text>
+<text transform="translate(53.363,20.282) rotate(-4.07)" font-size="0.7" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">P</tspan></text>
+<text transform="translate(56.356,20.069) rotate(-4.07)" font-size="0.7" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">P</tspan></text>
+<text transform="translate(59.348,19.856) rotate(-4.07)" font-size="0.7" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">P</tspan></text>
+<text transform="translate(62.341,19.643) rotate(-4.07)" font-size="0.7" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">P</tspan></text>
+<text transform="translate(65.333,19.431) rotate(-4.07)" font-size="0.7" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">P</tspan></text>
+<text transform="translate(68.325,19.218) rotate(-4.07)" font-size="0.7" fill="#222" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">P</tspan></text>
 </g>
 <g id="hranice">
 <polyline points="19.672,14.891 78.689,15.574 78.689,23.880" fill="none" stroke="#8b5a2b" stroke-width="0.7" stroke-linejoin="miter" transform="translate(0,-0.35)"/>
@@ -115,7 +117,7 @@
 <polyline points="10.000,14.698 10.400,33.500 18.474,41.415 71.839,37.621" fill="none" stroke="#1f6fd1" stroke-width="0.22" stroke-linejoin="round" marker-end="url(#hrot-mycka)"/>
 <polyline points="71.466,25.317 17.602,29.146 14.200,27.000 14.600,14.698" fill="none" stroke="#1f6fd1" stroke-width="0.22" stroke-linejoin="round" marker-end="url(#hrot-mycka)"/>
 <polyline points="12.000,14.698 12.800,24.000 24.629,22.230" fill="none" stroke="#e07b00" stroke-width="0.2" stroke-linejoin="round" stroke-dasharray="0.8 0.4" marker-end="url(#hrot-host)"/>
-<polyline points="26.054,21.127 33.751,19.401" fill="none" stroke="#2e8b2e" stroke-width="0.14" stroke-linejoin="round" stroke-dasharray="0.3 0.25" marker-end="url(#hrot-pesi)"/>
+<polyline points="26.054,21.127 33.770,19.665" fill="none" stroke="#2e8b2e" stroke-width="0.14" stroke-linejoin="round" stroke-dasharray="0.3 0.25" marker-end="url(#hrot-pesi)"/>
 <polyline points="36.253,32.031 35.675,23.895" fill="none" stroke="#2e8b2e" stroke-width="0.14" stroke-linejoin="round" stroke-dasharray="0.3 0.25" marker-end="url(#hrot-pesi)"/>
 <text transform="translate(13.565,13.598) rotate(0.00)" font-size="0.8" fill="#1f4e8c" text-anchor="middle" dominant-baseline="middle"><tspan x="0" y="0.000">VJEZD / VÝJEZD  z místní komunikace</tspan></text>
 </g>
@@ -196,42 +198,42 @@
 <line x1="28.075" y1="21.348" x2="28.125" y2="22.046" stroke="#000" stroke-width="0.07"/>
 <line x1="32.065" y1="21.064" x2="32.115" y2="21.762" stroke="#000" stroke-width="0.07"/>
 <g transform="translate(30.095,21.555) rotate(-4.07)"><rect x="-0.690" y="-0.8" width="1.380" height="0.56" rx="0.25" fill="#fff" opacity="0.92"/><text y="-0.5" font-size="0.48" text-anchor="middle" dominant-baseline="middle">4,00</text></g>
-<line x1="41.870" y1="15.148" x2="41.896" y2="15.514" stroke="#000" stroke-width="0.05"/>
-<line x1="42.219" y1="15.123" x2="41.521" y2="15.172" stroke="#000" stroke-width="0.07"/>
-<line x1="42.245" y1="15.489" x2="41.547" y2="15.538" stroke="#000" stroke-width="0.07"/>
-<g transform="translate(41.883,15.331) rotate(85.93)"><rect x="-0.690" y="-0.8" width="1.380" height="0.56" rx="0.25" fill="#fff" opacity="0.92"/><text y="-0.5" font-size="0.48" text-anchor="middle" dominant-baseline="middle">0,37</text></g>
-<line x1="41.896" y1="15.514" x2="42.073" y2="18.007" stroke="#000" stroke-width="0.05"/>
-<line x1="42.245" y1="15.489" x2="41.547" y2="15.538" stroke="#000" stroke-width="0.07"/>
-<line x1="42.423" y1="17.982" x2="41.724" y2="18.032" stroke="#000" stroke-width="0.07"/>
-<g transform="translate(41.985,16.760) rotate(85.93)"><rect x="-0.690" y="-0.8" width="1.380" height="0.56" rx="0.25" fill="#fff" opacity="0.92"/><text y="-0.5" font-size="0.48" text-anchor="middle" dominant-baseline="middle">2,50</text></g>
-<line x1="42.073" y1="18.007" x2="42.415" y2="22.815" stroke="#000" stroke-width="0.05"/>
-<line x1="42.423" y1="17.982" x2="41.724" y2="18.032" stroke="#000" stroke-width="0.07"/>
-<line x1="42.764" y1="22.790" x2="42.066" y2="22.839" stroke="#000" stroke-width="0.07"/>
-<g transform="translate(42.244,20.411) rotate(85.93)"><rect x="-0.690" y="-0.8" width="1.380" height="0.56" rx="0.25" fill="#fff" opacity="0.92"/><text y="-0.5" font-size="0.48" text-anchor="middle" dominant-baseline="middle">4,82</text></g>
-<line x1="42.415" y1="22.815" x2="42.486" y2="23.812" stroke="#000" stroke-width="0.05"/>
-<line x1="42.764" y1="22.790" x2="42.066" y2="22.839" stroke="#000" stroke-width="0.07"/>
-<line x1="42.835" y1="23.787" x2="42.137" y2="23.837" stroke="#000" stroke-width="0.07"/>
-<g transform="translate(42.451,23.313) rotate(85.93)"><rect x="-0.690" y="-0.8" width="1.380" height="0.56" rx="0.25" fill="#fff" opacity="0.92"/><text y="-0.5" font-size="0.48" text-anchor="middle" dominant-baseline="middle">1,00</text></g>
-<line x1="33.152" y1="25.077" x2="42.130" y2="24.439" stroke="#000" stroke-width="0.05"/>
+<line x1="45.081" y1="15.185" x2="45.107" y2="15.551" stroke="#000" stroke-width="0.05"/>
+<line x1="45.430" y1="15.160" x2="44.732" y2="15.210" stroke="#000" stroke-width="0.07"/>
+<line x1="45.456" y1="15.526" x2="44.758" y2="15.576" stroke="#000" stroke-width="0.07"/>
+<g transform="translate(45.094,15.368) rotate(85.93)"><rect x="-0.690" y="-0.8" width="1.380" height="0.56" rx="0.25" fill="#fff" opacity="0.92"/><text y="-0.5" font-size="0.48" text-anchor="middle" dominant-baseline="middle">0,37</text></g>
+<line x1="45.107" y1="15.551" x2="45.284" y2="18.044" stroke="#000" stroke-width="0.05"/>
+<line x1="45.456" y1="15.526" x2="44.758" y2="15.576" stroke="#000" stroke-width="0.07"/>
+<line x1="45.633" y1="18.020" x2="44.935" y2="18.069" stroke="#000" stroke-width="0.07"/>
+<g transform="translate(45.196,16.798) rotate(85.93)"><rect x="-0.690" y="-0.8" width="1.380" height="0.56" rx="0.25" fill="#fff" opacity="0.92"/><text y="-0.5" font-size="0.48" text-anchor="middle" dominant-baseline="middle">2,50</text></g>
+<line x1="45.284" y1="18.044" x2="45.607" y2="22.588" stroke="#000" stroke-width="0.05"/>
+<line x1="45.633" y1="18.020" x2="44.935" y2="18.069" stroke="#000" stroke-width="0.07"/>
+<line x1="45.956" y1="22.563" x2="45.258" y2="22.612" stroke="#000" stroke-width="0.07"/>
+<g transform="translate(45.446,20.316) rotate(85.93)"><rect x="-0.690" y="-0.8" width="1.380" height="0.56" rx="0.25" fill="#fff" opacity="0.92"/><text y="-0.5" font-size="0.48" text-anchor="middle" dominant-baseline="middle">4,55</text></g>
+<line x1="45.607" y1="22.588" x2="45.678" y2="23.585" stroke="#000" stroke-width="0.05"/>
+<line x1="45.956" y1="22.563" x2="45.258" y2="22.612" stroke="#000" stroke-width="0.07"/>
+<line x1="46.027" y1="23.560" x2="45.329" y2="23.610" stroke="#000" stroke-width="0.07"/>
+<g transform="translate(45.643,23.086) rotate(85.93)"><rect x="-0.690" y="-0.8" width="1.380" height="0.56" rx="0.25" fill="#fff" opacity="0.92"/><text y="-0.5" font-size="0.48" text-anchor="middle" dominant-baseline="middle">1,00</text></g>
+<line x1="33.152" y1="25.077" x2="45.322" y2="24.212" stroke="#000" stroke-width="0.05"/>
 <line x1="33.128" y1="24.728" x2="33.177" y2="25.426" stroke="#000" stroke-width="0.07"/>
-<line x1="42.105" y1="24.090" x2="42.155" y2="24.788" stroke="#000" stroke-width="0.07"/>
-<g transform="translate(37.641,24.758) rotate(-4.07)"><rect x="-0.690" y="-0.8" width="1.380" height="0.56" rx="0.25" fill="#fff" opacity="0.92"/><text y="-0.5" font-size="0.48" text-anchor="middle" dominant-baseline="middle">9,00</text></g>
-<line x1="42.928" y1="24.382" x2="45.920" y2="24.169" stroke="#000" stroke-width="0.05"/>
-<line x1="42.903" y1="24.033" x2="42.953" y2="24.731" stroke="#000" stroke-width="0.07"/>
-<line x1="45.895" y1="23.820" x2="45.945" y2="24.518" stroke="#000" stroke-width="0.07"/>
-<g transform="translate(44.424,24.276) rotate(-4.07)"><rect x="-0.690" y="-0.8" width="1.380" height="0.56" rx="0.25" fill="#fff" opacity="0.92"/><text y="-0.5" font-size="0.48" text-anchor="middle" dominant-baseline="middle">3,00</text></g>
-<line x1="45.920" y1="24.169" x2="48.913" y2="23.957" stroke="#000" stroke-width="0.05"/>
-<line x1="45.895" y1="23.820" x2="45.945" y2="24.518" stroke="#000" stroke-width="0.07"/>
-<line x1="48.888" y1="23.607" x2="48.937" y2="24.306" stroke="#000" stroke-width="0.07"/>
-<g transform="translate(47.416,24.063) rotate(-4.07)"><rect x="-0.690" y="-0.8" width="1.380" height="0.56" rx="0.25" fill="#fff" opacity="0.92"/><text y="-0.5" font-size="0.48" text-anchor="middle" dominant-baseline="middle">3,00</text></g>
-<line x1="48.913" y1="23.957" x2="51.905" y2="23.744" stroke="#000" stroke-width="0.05"/>
-<line x1="48.888" y1="23.607" x2="48.937" y2="24.306" stroke="#000" stroke-width="0.07"/>
-<line x1="51.880" y1="23.395" x2="51.930" y2="24.093" stroke="#000" stroke-width="0.07"/>
-<g transform="translate(50.409,23.850) rotate(-4.07)"><rect x="-0.690" y="-0.8" width="1.380" height="0.56" rx="0.25" fill="#fff" opacity="0.92"/><text y="-0.5" font-size="0.48" text-anchor="middle" dominant-baseline="middle">3,00</text></g>
-<line x1="70.026" y1="16.340" x2="70.416" y2="21.826" stroke="#000" stroke-width="0.05"/>
-<line x1="70.375" y1="16.315" x2="69.676" y2="16.365" stroke="#000" stroke-width="0.07"/>
-<line x1="70.765" y1="21.801" x2="70.067" y2="21.851" stroke="#000" stroke-width="0.07"/>
-<g transform="translate(70.221,19.083) rotate(85.93)"><rect x="-0.690" y="-0.8" width="1.380" height="0.56" rx="0.25" fill="#fff" opacity="0.92"/><text y="-0.5" font-size="0.48" text-anchor="middle" dominant-baseline="middle">5,50</text></g>
+<line x1="45.297" y1="23.863" x2="45.346" y2="24.561" stroke="#000" stroke-width="0.07"/>
+<g transform="translate(39.237,24.645) rotate(-4.07)"><rect x="-0.825" y="-0.8" width="1.650" height="0.56" rx="0.25" fill="#fff" opacity="0.92"/><text y="-0.5" font-size="0.48" text-anchor="middle" dominant-baseline="middle">12,20</text></g>
+<line x1="46.120" y1="24.155" x2="49.112" y2="23.942" stroke="#000" stroke-width="0.05"/>
+<line x1="46.095" y1="23.806" x2="46.144" y2="24.504" stroke="#000" stroke-width="0.07"/>
+<line x1="49.087" y1="23.593" x2="49.137" y2="24.292" stroke="#000" stroke-width="0.07"/>
+<g transform="translate(47.616,24.049) rotate(-4.07)"><rect x="-0.690" y="-0.8" width="1.380" height="0.56" rx="0.25" fill="#fff" opacity="0.92"/><text y="-0.5" font-size="0.48" text-anchor="middle" dominant-baseline="middle">3,00</text></g>
+<line x1="49.112" y1="23.942" x2="52.105" y2="23.730" stroke="#000" stroke-width="0.05"/>
+<line x1="49.087" y1="23.593" x2="49.137" y2="24.292" stroke="#000" stroke-width="0.07"/>
+<line x1="52.080" y1="23.381" x2="52.129" y2="24.079" stroke="#000" stroke-width="0.07"/>
+<g transform="translate(50.608,23.836) rotate(-4.07)"><rect x="-0.690" y="-0.8" width="1.380" height="0.56" rx="0.25" fill="#fff" opacity="0.92"/><text y="-0.5" font-size="0.48" text-anchor="middle" dominant-baseline="middle">3,00</text></g>
+<line x1="52.105" y1="23.730" x2="55.097" y2="23.517" stroke="#000" stroke-width="0.05"/>
+<line x1="52.080" y1="23.381" x2="52.129" y2="24.079" stroke="#000" stroke-width="0.07"/>
+<line x1="55.072" y1="23.168" x2="55.122" y2="23.866" stroke="#000" stroke-width="0.07"/>
+<g transform="translate(53.601,23.623) rotate(-4.07)"><rect x="-0.690" y="-0.8" width="1.380" height="0.56" rx="0.25" fill="#fff" opacity="0.92"/><text y="-0.5" font-size="0.48" text-anchor="middle" dominant-baseline="middle">3,00</text></g>
+<line x1="70.225" y1="16.326" x2="70.615" y2="21.812" stroke="#000" stroke-width="0.05"/>
+<line x1="70.574" y1="16.301" x2="69.876" y2="16.351" stroke="#000" stroke-width="0.07"/>
+<line x1="70.964" y1="21.787" x2="70.266" y2="21.837" stroke="#000" stroke-width="0.07"/>
+<g transform="translate(70.420,19.069) rotate(85.93)"><rect x="-0.690" y="-0.8" width="1.380" height="0.56" rx="0.25" fill="#fff" opacity="0.92"/><text y="-0.5" font-size="0.48" text-anchor="middle" dominant-baseline="middle">5,50</text></g>
 <line x1="59.169" y1="35.671" x2="59.627" y2="42.105" stroke="#000" stroke-width="0.05"/>
 <line x1="59.518" y1="35.646" x2="58.820" y2="35.695" stroke="#000" stroke-width="0.07"/>
 <line x1="59.976" y1="42.080" x2="59.278" y2="42.130" stroke="#000" stroke-width="0.07"/>
@@ -256,8 +258,8 @@
 <g id="razitko">
 <line x1="3.0" y1="57.300000000000004" x2="85.0" y2="57.300000000000004" stroke="#999" stroke-width="0.05"/>
 <text transform="translate(3.200,58.900) rotate(0.00)" font-size="1.3" fill="#111" text-anchor="start" dominant-baseline="middle" font-weight="600"><tspan x="0" y="0.000">V1 – Parkování u vjezdu, stánek uprostřed</tspan></text>
-<text transform="translate(3.200,60.500) rotate(0.00)" font-size="0.7" fill="#444" text-anchor="start" dominant-baseline="middle"><tspan x="0" y="0.000">Malá kavárna 3,0 × 2,5 m (káva, pečivo) naproti vysavačům, hosté parkují v kapse u vjezdu.</tspan></text>
-<text transform="translate(3.200,61.900) rotate(0.00)" font-size="0.7" fill="#444" text-anchor="start" dominant-baseline="middle"><tspan x="0" y="0.000">Parkování 13 (ZTP 1) · stání u vysavačů 4 · místa k sezení 12 · terasa 43 m²</tspan></text>
+<text transform="translate(3.200,60.500) rotate(0.00)" font-size="0.7" fill="#444" text-anchor="start" dominant-baseline="middle"><tspan x="0" y="0.000">Bistro 12,2 × 2,5 m (kontejner 40 stop) naproti vysavačům, hosté parkují v kapse u vjezdu.</tspan></text>
+<text transform="translate(3.200,61.900) rotate(0.00)" font-size="0.7" fill="#444" text-anchor="start" dominant-baseline="middle"><tspan x="0" y="0.000">Parkování 12 (ZTP 1) · stání u vysavačů 4 · místa k sezení 16 · terasa 56 m²</tspan></text>
 <text transform="translate(3.200,63.300) rotate(0.00)" font-size="0.55" fill="#777" text-anchor="start" dominant-baseline="middle"><tspan x="0" y="0.000">Kóty v metrech · samoobslužné mycí centrum · studie rozmístění · 1:200 na A3 · podklad z Affinity, přesnost ±0,3 m · 23. 10. 2026</tspan></text>
 <rect x="42.0" y="58.300000000000004" width="1.4" height="0.9" fill="#e3e1b0" stroke="#a5161b" stroke-width="0.22"/>
 <text x="43.8" y="59.00000000000001" font-size="0.6" fill="#333">mycí box</text>

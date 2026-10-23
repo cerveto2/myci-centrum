@@ -427,7 +427,7 @@ TXT_PRUH = f"{PRUH:.1f}".replace(".", ",")
 # ---------------------------------------------------------------- VARIANTY
 def varianta_1():
     vk = Vykres("V1", "Parkování u vjezdu, stánek uprostřed",
-                "Malá kavárna 3,0 × 2,5 m (káva, pečivo) naproti vysavačům, hosté parkují v kapse u vjezdu.")
+                "Bistro 12,2 × 2,5 m (kontejner 40 stop) naproti vysavačům, hosté parkují v kapse u vjezdu.")
     zaklad(vk, sever_pruh_obousmerny=False)
     blok_vysavacu_ostrov(vk, koty=True)
     # parkovací kapsa podél zdi u vjezdu (auta čelem ke zdi)
@@ -445,15 +445,13 @@ def varianta_1():
         pocet += 1
     vk.retez_u(hrany, max(cela) + 0.6)
     kapsa_konec = u
-    # malý stánek (káva, pečivo) uprostřed terasy naproti východnímu bloku vysavačů
-    t1, t2 = kapsa_konec + 0.8, kapsa_konec + 0.8 + 9.0
+    # bistro naproti vysavačům, terasa po celé jeho délce
+    t1 = kapsa_konec + 0.8
+    t2 = t1 + STANKY["velky"][0]
     vs = max(v_zed(t1), v_zed(t2)) + 0.4
-    k1 = (t1 + t2 - STANKY["maly"][0]) / 2
-    k2, vj = vk.kiosk(k1, vs, "maly")
-    vk.rect("zelen", t1, vs, k1 - 0.3, vj)
-    vk.rect("zelen", k2 + 0.3, vs, t2, vj)
+    _, vj = vk.kiosk(t1, vs, "velky")
     vk.rect("terasa", t1, vj, t2, SEVER_PRUH - 1.0, "terasa s pergolou", 0.6, ((t1 + t2) / 2, SEVER_PRUH - 1.6))
-    vk.stoly([(u, vj + 1.6) for u in (t1 + 1.5, t1 + 4.5, t1 + 7.5)])
+    vk.stoly([(t1 + 1.5 + 2.9 * i, vj + 1.6) for i in range(4)])
     prechod_u = -BLOK + VYSAVAC_STANI + OSTRUVEK / 2       # proti ostrůvku východního bloku
     vk.rect("zelen", t1, SEVER_PRUH - 1.0, prechod_u - 1.0, SEVER_PRUH - 0.1)
     vk.rect("zelen", prechod_u + 1.0, SEVER_PRUH - 1.0, t2, SEVER_PRUH - 0.1)
@@ -469,21 +467,22 @@ def varianta_1():
     vk.kota_v(-17.5, SEVER_PRUH, v_zed(-17.5) + 0.3 + STANI[1])
     vk.plusy = [
         "Hosté stánku zaparkují v kapse hned u vjezdu a do provozu myčky nevjíždějí. Ulička podél boxů zůstává jednosměrná.",
-        "Stánek s terasou je uprostřed, blízko vysavačů i boxů. Přechod od ostrůvku vede rovnou na terasu.",
+        "Bistro s terasou je uprostřed, blízko vysavačů i boxů. Přechod od ostrůvku vede rovnou na terasu.",
+        "Bistro (kuchyně, sklad, WC pro personál) zvládne teplá jídla i víc obsluhy.",
         "Vysavače jsou pohromadě u boxů, auta k nim zajíždějí po cestě k výjezdu.",
         f"Celkem {pocet} velkorysých stání: 4 v kapse u vjezdu (z toho 1 ZTP) a zbytek podél zdi pro zákazníky myčky.",
     ]
     vk.minusy = [
         "Kapsa leží ve vyjížděcím pruhu u výjezdu. Kdo couvá z kapsy, kříží auta, která odjíždějí z myčky.",
         "Stánek není z vjezdu tak vidět jako stánek přímo u vjezdu, terasa je blíž hluku vysokotlakých pistolí.",
-        "Malá kavárna (káva, pečivo, bez vaření) je nejlevnější na provoz a stačí jí 1 obsluha, ale teplé jídlo neudělá. Terasa je mělká (asi 4,8 m) s jednou řadou stolů.",
+        "Terasa je tu mělká (asi 4,5 m), vejde se jen jedna řada stolů.",
     ]
     return vk
 
 
 def varianta_2():
     vk = Vykres("V2", "Vysavače naproti boxům",
-                "Občerstvení 6,1 × 2,5 m (kontejner 20 stop) u vjezdu, z boxu rovně k vysavači, ostrov = parkoviště.")
+                "Bistro 12,2 × 2,5 m (kontejner 40 stop) u vjezdu, z boxu rovně k vysavači, ostrov = parkoviště.")
     zaklad(vk, sever_pruh_obousmerny=True)
     # vysavače podél zdi naproti boxům M1–M3, vjezd z jihu (z uličky)
     v_vys = (SEVER_PRUH - VYSAVAC_HLOUBKA, SEVER_PRUH)
@@ -492,7 +491,7 @@ def varianta_2():
     # ostrov: parkování čelem od uličky (vjezd ze severu)
     pocet = vk.stani_rada(VYS_A[0], -0.3, VYS_NOVE[0], VYS_NOVE[0] + STANI[1], ztp_na_konci=True,
                           kota_v=VYS_NOVE[0] - 0.6, hloubka_na_zacatku=True)
-    stanek_u_vjezdu(vk, "stredni", -8.0, -11.4)
+    stanek_u_vjezdu(vk, "velky", -20.5 + STANKY["velky"][0], -11.4)
     pocet += vk.stani_rada(-7.4, 0.0, SEVER_PRUH - STANI[1], SEVER_PRUH, kota_v=SEVER_PRUH + 0.6)
     pocet += vk.stani_rada(0.6 + 2 * BLOK + 0.5, 31.0, SEVER_PRUH - STANI[1], SEVER_PRUH)
     vk.sipka("host", [(12.0, VJEZD_Y + 0.6), (12.6, 25.5), g(-14.0, -5.0)])
@@ -503,7 +502,7 @@ def varianta_2():
     vk.plusy = [
         "Z boxu se jede rovně přes uličku do stání u vysavače, nemusí se zatáčet.",
         "Ostrov na západě je celý pro hosty stánku, stání jsou blízko stánku i vjezdu.",
-        "Kontejner 20 stop (6,1 × 2,5 m) unese jednoduchou přípravu jídel (gril, fritéza, digestoř). Vedle zbývá místo na sklad a zeleň a místo něj může stát i food truck.",
+        "Bistro (kuchyně, sklad, WC pro personál) stojí hned u vjezdu, kde ho míjí každé auto, a před ním je hluboká terasa se dvěma řadami stolů.",
         f"{pocet} velkorysých parkovacích stání a 4 stání u vysavačů (4 m). Vysavače jsou u zdi, dál od jižní silnice.",
     ]
     vk.minusy = [
@@ -748,10 +747,10 @@ mění se vysavače, stánek, terasa a parkování. Rozměry jsou odměřené z 
 <p class="muted">Přehled běžných velikostí podle toho, co se ve stánku prodává. Rozměry jsou vnější (půdorys na pozemku).</p>
 <table><tr><th>Typ</th><th>Rozměr</th><th>Plocha</th><th>Na co se hodí</th><th>Ve variantě</th></tr>
 <tr><td>Dřevěný prodejní stánek / bouda</td><td>1,5 × 2,6 až 1,8 × 3,4 m; 3,0 × 2,0–2,5 m</td><td>4–8 m²</td><td>káva, pečivo, balené zboží – bez vaření, 1 obsluha</td><td>–</td></tr>
-<tr><td>Kontejner 10 stop</td><td>3,0 × 2,44 m</td><td>~7 m²</td><td>malá kavárna, pekařský stánek, zmrzlina</td><td><b>V1</b> (3,0 × 2,5 m)</td></tr>
-<tr><td>Food truck / přívěs</td><td>4,9–7,3 × 2,1–2,4 m (např. 5,93 × 2,08 m)</td><td>10–17 m²</td><td>street food s přípravou, dá se odvézt (zimní sezóna)</td><td>alternativa ke V2</td></tr>
-<tr><td>Kontejner 20 stop</td><td>6,06 × 2,44 m (uvnitř 5,9 × 2,35 m)</td><td>~15 m²</td><td>rychlé občerstvení s přípravou: gril, fritéza, digestoř, dřez, 1–2 obsluha</td><td><b>V2</b> (6,1 × 2,5 m)</td></tr>
-<tr><td>Kontejner 40 stop nebo 2× 20 stop</td><td>12,2 × 2,44 m nebo ~6,1 × 4,9 m</td><td>~30 m²</td><td>bistro: kuchyně, sklad, mytí nádobí, WC pro personál, víc obsluhy</td><td>– (vejde se na místo stánku ve V2)</td></tr>
+<tr><td>Kontejner 10 stop</td><td>3,0 × 2,44 m</td><td>~7 m²</td><td>malá kavárna, pekařský stánek, zmrzlina</td><td>–</td></tr>
+<tr><td>Food truck / přívěs</td><td>4,9–7,3 × 2,1–2,4 m (např. 5,93 × 2,08 m)</td><td>10–17 m²</td><td>street food s přípravou, dá se odvézt (zimní sezóna)</td><td>–</td></tr>
+<tr><td>Kontejner 20 stop</td><td>6,06 × 2,44 m (uvnitř 5,9 × 2,35 m)</td><td>~15 m²</td><td>rychlé občerstvení s přípravou: gril, fritéza, digestoř, dřez, 1–2 obsluha</td><td>–</td></tr>
+<tr><td>Kontejner 40 stop nebo 2× 20 stop</td><td>12,2 × 2,44 m nebo ~6,1 × 4,9 m</td><td>~30 m²</td><td>bistro: kuchyně, sklad, mytí nádobí, WC pro personál, víc obsluhy</td><td><b>V1 i V2</b> (12,2 × 2,5 m)</td></tr>
 </table>
 <h3 style="margin-top:14px">Na co si dát pozor</h3><ul>
 <li><b>Hygiena:</b> vyhláška 137/2004 Sb. má dnes většinu požadavků na provozovny zrušenou a řídí se hlavně předpisy EU. Kde se jídlo připravuje, počítejte s tekoucí teplou i studenou vodou, umyvadlem na ruce, odpadní vodou a chlazením. Konkrétní požadavky, včetně WC pro hosty u posezení, je potřeba odsouhlasit s krajskou hygienickou stanicí. Jednoznačný limit jsem nenašel. Jedna možnost je zpřístupnit hostům WC v TECH BOXu.</li>
