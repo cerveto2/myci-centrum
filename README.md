@@ -1,9 +1,10 @@
-# Samoobslužné mycí centrum – studie rozmístění (finální verze V4)
+# Samoobslužné mycí centrum – studie rozmístění
 
 **Zobrazení plánu:** https://cerveto2.github.io/myci-centrum/vystup/prehled.html
 (stejný soubor lze otevřít i lokálně: `vystup/prehled.html`, je samostatný a nepotřebuje internet)
+Výkres k tisku / archivaci: `vystup/prehled.pdf`
 
-Stav: finální studie, 27. 10. 2026. Jde o studii rozmístění, ne o projektovou dokumentaci.
+Stav: finální studie, 27. 10. 2026. Jde o studii rozmístění, ne o projektovou dokumentaci; rozměry jsou orientační.
 
 ## Co areál obsahuje
 - jednosměrná smyčka: vjezd → parkování nebo boxy → vysavače → výjezd
@@ -28,11 +29,7 @@ Stav: finální studie, 27. 10. 2026. Jde o studii rozmístění, ne o projektov
 ## Podklad a přesnost
 Výkres vychází z plánku z Affinity (měřítko 1:200 na A3). **Přesnost je ±0,3 m**, před realizací je nutné ověřit zaměřením. Původní plánek lze v plánu zobrazit zaškrtávátkem „zobrazit původní plánek pod výkresem" (je přímo součástí souboru).
 
-## Známá rizika (viz stránka plánu)
-- host bistra jede do ostrova jižním pruhem, kterým se jezdí na myčku, takže dlouhá fronta na boxy může blokovat vjezd
-- auto z M1 má po směru jen jedno stání u vysavače (nejzápadnější)
-- z podélných stání u vjezdu se couvá do výjezdového pruhu u brány
-
 ## Obsah repozitáře
-- `vystup/prehled.html` – finální plán (V4)
+- `vystup/prehled.html` – finální plán
+- `vystup/prehled.pdf` – totéž ve formátu PDF
 - `index.html` – přesměrování na plán
